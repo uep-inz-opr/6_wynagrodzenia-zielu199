@@ -48,3 +48,9 @@ for pracownik in pracownicy:
 
 
 
+laczny_koszt_pracodawcy = 0
+for i in range(len(pracownicy)):
+    koszt = pracownicy[i].oblicz_koszt_pracodawcy()
+    laczny_koszt_pracodawcy += koszt
+
+print(laczny_koszt_pracodawcy)
